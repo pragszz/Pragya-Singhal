@@ -10,7 +10,7 @@ format:
     toc: true
     toc-depth: 2
     fig-pos: "H"
-bibliography: references.bib
+bibliography: reports/references.bib
 ---
 
 ```{python}
@@ -76,7 +76,7 @@ Note that we define standard deviation (of a sample) as
 
 $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
-Additionally, note that in @tbl-horses-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-horse-pop).
+Additionally, note that in @tbl-horses-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-horse-pop.
 
 ![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-largest-sd width = 70%}
 
