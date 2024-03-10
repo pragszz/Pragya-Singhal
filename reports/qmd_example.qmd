@@ -10,6 +10,7 @@ format:
   pdf:
       toc: true
       toc-depth: 2
+      fig-pos: "H"
 editor: source
 bibliography: references.bib
 ---
@@ -41,14 +42,9 @@ as well as Quarto (Allaire et al. 2022).
 
 Results
 
-```{figure} ../results/horse_pops_plot.png
-:name: horse_pops_plot
-:width: 60%
-:caption: Caption for the first figure.
+![Horse populations for all provinces in Canada from 1906 - 1972.16.](../results/horse_pops_plot.png){#fig-horse-pop width=95%}
 
-Figure \@ref(fig:horse_pops_plot):: Horse populations for all provinces in Canada from 1906 - 1972.
-
-We can see from Figure \@ref(fig:horse_pops_plot) that Ontario, Saskatchewan and Alberta 
+We can see from Figure @fig-horse-pop that Ontario, Saskatchewan and Alberta 
 have had the highest horse populations in Canada. 
 All provinces have had a decline in horse populations since 1940. 
 This is likely due to the rebound of the Canadian automotive industry 
@@ -73,16 +69,10 @@ Note that we define standard deviation (of a sample) as
 
 $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
-Additionally, note that in Table \@ref(tbl:horses_sd) we consider the sample standard deviation of the number of horses during the same time span as Figure \@ref(fig:horse_pops_plot).
+Additionally, note that in Table \@ref(tbl:horses_sd) we consider the sample standard deviation of the number of horses during the same time span as Figure @fig-horse-pop).
 
-```{figure}../results/horse_pops_plot_largest_sd.png
-:name: horse_pops_plot_largest_sd
-:width: 70%
-:caption: Caption for the second figure.
+![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-horse-pops-plot-largest-sd width = 70%}
 
-
-Figure \@ref(fig:horse_pops_plot_largest_sd): Horse populations for the province with the largest standard deviation
-
-In Figure \@ref(fig:horse_pops_plot_largest_sd) we zoom in and look at the province of `\[largest_sd\]`, which had the largest spread of values in terms of standard deviation.
+In Figure @fig-horse-pops-plot-largest-sd we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
 References
